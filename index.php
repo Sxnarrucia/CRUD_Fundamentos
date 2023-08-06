@@ -20,7 +20,8 @@
 
             if (!$result) {
                 die("Fallo en la solicitud");
-            } else {
+            } 
+            else {
                 while ($row = mysqli_fetch_assoc($result)) {
                     ?>
 
@@ -29,8 +30,7 @@
                 }
             }
             
-
-            ?>
+             ?>
             <tr>
                 <td>3</td>
                 <td>Esteban</td>
