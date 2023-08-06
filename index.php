@@ -14,7 +14,7 @@
         <tbody>
             <?php
 
-            $query = "select * from 'Usuarios'";
+            $query = "SELECT * FROM 'Usuarios'";
 
             $result = mysqli_query($connection, $query);
 
