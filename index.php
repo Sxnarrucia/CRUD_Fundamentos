@@ -19,7 +19,7 @@
             $result = mysqli_query($connection, $query);
 
             if (!$result) {
-                die("Fallo en la solicitud".mysqli_error());
+                die("Fallo en la solicitud");
             } else {
                 print_r($result);
             }
