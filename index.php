@@ -3,7 +3,7 @@
 
 <div class="box1">
 <h2>USUARIOS</h2>
-<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Agregar Usuarios</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Agregar Usuarios</button>
 </div>
 <table class="table table-hover table-bordered table-striped">
     <thead>
@@ -41,26 +41,42 @@
     </tbody>
 </table>
 
+
+<form>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Usuarios</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+
+            <div class="form-group">
+                <label for="f_name">Primer Nombre</label>
+                <input type="text" name="f_name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="l_name">Segundo Nombre</label>
+                <input type="text" name="l_name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="id">Identificación</label>
+                <input type="text" name="identification" class="form-control">
+            </div>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-success">Agregar</button>
       </div>
     </div>
   </div>
 </div>
+</form>
 
 
 <?php include('footer.php'); ?>
