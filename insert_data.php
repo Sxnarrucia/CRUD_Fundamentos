@@ -8,14 +8,12 @@ if(isset($_POST['add_users'])){
 
     if ($fname == "" || empty($fname)) {
         header('location:index.php?message=Nombre incompleto');
-    }
-
-    if ($lname == "" || empty($lname)) {
+    } elseif ($lname == "" || empty($lname)) {
         header('location:index.php?message=Apellido incompleto');
-    }
-
-    if ($identification == "" || empty($identification)) {
-        header('location:index.php?message=Identificacion incompleta');
+    } elseif ($identification == "" || empty($identification)) {
+        header('location:index.php?message=Identificación incompleta');
+    } else {
+        header('location:index.php?message=Todo bien!');
     }
 
 }
