@@ -58,11 +58,11 @@
                 <input type="text" name="f_name" class="form-control">
             </div>
             <div class="form-group">
-                <label for="f_name">Segundo Nombre</label>
+                <label for="l_name">Segundo Nombre</label>
                 <input type="text" name="l_name" class="form-control">
             </div>
             <div class="form-group">
-                <label for="f_name">Identificación</label>
+                <label for="id">Identificación</label>
                 <input type="text" name="id" class="form-control">
             </div>
       </div>
