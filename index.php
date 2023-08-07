@@ -22,12 +22,7 @@
                 die("Fallo en la solicitud");
             } 
             else {
-                while ($row = mysqli_fetch_assoc($result)) {
-                    ?>
-
-                    <h4>Hello</h4>
-                    <?php
-                }
+                print_r($result);
             }
             
              ?>
