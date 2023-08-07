@@ -41,6 +41,14 @@
     </tbody>
 </table>
 
+<?php
+
+if (isset($_GET['meesage'])) {
+    echo "<h6>" .$_GET['meesage']."</h6>";
+}
+
+?>
+
 
 <form action="insert_data.php" method="POST">
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
