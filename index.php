@@ -44,7 +44,7 @@
 <?php
 
 if (isset($_GET['message'])) {
-    echo '<h6>' .$_GET['message'].'</h6>';
+    echo '<h5>' .$_GET['message'].'</h5>';
 }
 
 ?>
