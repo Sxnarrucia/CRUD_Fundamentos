@@ -42,7 +42,7 @@
 </table>
 
 
-<form>
+<form action="insert_data.php" method="post">
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -70,7 +70,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Agregar</button>
+        <input type="submi" class="btn btn-primary" name="add_users" value="Añadir">
       </div>
     </div>
   </div>
