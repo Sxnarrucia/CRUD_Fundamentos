@@ -1,43 +1,27 @@
-    <?php include('header.php'); ?>
-    <?php include('dbcon.php'); ?>
+<?php
+$servername = "localhost";
+$username = "sxnarrucia";
+$password = "Fundamentos1!";
+$dbname = "CRUD_Sistemas";
 
-        <h2>USUARIOS</h2>
-        <table class="table table-hover table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Primer Nombre</th>
-                <th>Apellidos</th>
-                <th>Cédula</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
 
-            $query = "SELECT * FROM 'Usuarios'";
+$sql = "SELECT * FROM Usuarios";
+$result = mysqli_query($conn, $sql);
 
-            $result = mysqli_query($connection, $query);
+if (mysqli_num_rows($result) > 0) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result)) {
+    echo "id: " . $row["ID"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
 
-            if (!$result) {
-                die("Fallo en la solicitud");
-            } 
-            else {
-                print_r($result);
-            }
-            
-             ?>
-            <tr>
-                <td>3</td>
-                <td>Esteban</td>
-                <td>Sanarrucia</td>
-                <td>24</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Rebeca</td>
-                <td>Sanarrucia</td>
-                <td>14</td>
-            </tr>
-        </tbody>
-        </table>
-        <?php include('footer.php'); ?>
+mysqli_close($conn);
+?>
