@@ -13,6 +13,8 @@ if (isset($_GET['ID'])) {
 
     $result = mysqli_query($connection, $query);
 
+    print_r($result);
+
     if (!$result) {
         die("Fallo en la solicitud" . mysqli_connect_error());
     } else {
