@@ -25,7 +25,6 @@
             die("Fallo en la solicitud" . mysqli_connect_error());
         } else {
             while ($row = mysqli_fetch_assoc($result)) {
-                echo "$row";
         ?>
                 <tr>
                     <td><?php echo $row['ID']; ?></td>
