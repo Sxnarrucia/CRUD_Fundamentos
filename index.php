@@ -52,7 +52,7 @@ if (isset($_GET['message'])) {
 <?php
 
 if (isset($_GET['insert_msg'])) {
-    echo '<h7>' .$_GET['insert_msg'].'</h7>';
+    echo '<h6>' .$_GET['insert_msg'].'</h6>';
 }
 
 ?>
