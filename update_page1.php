@@ -7,7 +7,7 @@ if (isset($_GET['ID'])) {
     $id = $_GET['ID'];
 
 }
-    $query = "SELECT * FROM Usuarios WHERE ID = $id" ;
+    $query = "SELECT * FROM Usuarios WHERE ID = '$id'" ;
 
     $result = mysqli_query($connection, $query);
 
