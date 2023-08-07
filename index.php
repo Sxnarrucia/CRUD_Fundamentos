@@ -49,6 +49,15 @@ if (isset($_GET['message'])) {
 
 ?>
 
+<?php
+
+if (isset($_GET['insert_msg'])) {
+    echo '<h7>' .$_GET['insert_msg'].'</h7>';
+}
+
+?>
+
+
 
 <form action="insert_data.php" method="POST">
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -1,4 +1,5 @@
 <?php
+include 'dbcon.php';
 
 if(isset($_POST['add_users'])){
     
@@ -13,7 +14,16 @@ if(isset($_POST['add_users'])){
     } elseif ($identification == "" || empty($identification)) {
         header('location:index.php?message=Identificación incompleta');
     } else {
-        header('location:index.php?message=Todo bien!');
+        $query = "INSERT INTO Usuarios (First_Name, Last_Name, Identification) values ('$fname', '$lname', '$identification')";
+
+        $result = mysqli_query($connection,$query);
+
+        if (!$result) {
+            die("Fallo en el query".mysqli_connect_error());
+        } else {
+            header('location:index.php?insert_msg=Información subida correctamente');
+        }
+        
     }
 
 }
