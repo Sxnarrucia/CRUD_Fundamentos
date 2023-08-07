@@ -70,7 +70,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <input type="submi" class="btn btn-primary" name="add_users" value="ADD">
+        <input type="submit" class="btn btn-primary" name="add_users" value="Añadir">
       </div>
     </div>
   </div>
