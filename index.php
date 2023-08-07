@@ -12,6 +12,8 @@
             <th>Primer Nombre</th>
             <th>Apellidos</th>
             <th>Cédula</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
         </tr>
     </thead>
     <tbody>
@@ -31,6 +33,8 @@
                     <td><?php echo $row['First_Name']; ?></td>
                     <td><?php echo $row['Last_Name']; ?></td>
                     <td><?php echo $row['Identification']; ?></td>
+                    <td><a href="#" class="btn btn-success">Actualizar</a></td>
+                    <td><a href="#" class="btn btn-danger">Eliminar</a></td>
                 </tr>
         <?php
             }
