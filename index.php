@@ -43,8 +43,8 @@
 
 <?php
 
-if (isset($_GET['meesage'])) {
-    echo '<h6>' .$_GET['meesage'].'</h6>';
+if (isset($_GET['message'])) {
+    echo '<h6>' .$_GET['message'].'</h6>';
 }
 
 ?>
