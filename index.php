@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 <?php include('dbcon.php'); ?>
 
-<div class="box1"></div>
+<div class="box1">
 <h2>USUARIOS</h2>
 <button class="btn btn-primary">Agregar Usuarios</button>
 </div>
