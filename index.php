@@ -53,7 +53,6 @@
         </button>
       </div>
       <div class="modal-body">
-        
             <div class="form-group">
                 <label for="f_name">Primer Nombre</label>
                 <input type="text" name="f_name" class="form-control">
@@ -66,7 +65,6 @@
                 <label for="f_name">Identificación</label>
                 <input type="text" name="id" class="form-control">
             </div>
-        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
