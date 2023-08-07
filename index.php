@@ -3,7 +3,7 @@
 
 <div class="box1">
 <h2>USUARIOS</h2>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Agregar Usuarios</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar Usuarios</button>
 </div>
 <table class="table table-hover table-bordered table-striped">
     <thead>
