@@ -1,7 +1,10 @@
 <?php include('header.php'); ?>
 <?php include('dbcon.php'); ?>
 
+<div class="box1"></div>
 <h2>USUARIOS</h2>
+<button class="btn btn-primary">Agregar Usuarios</button>
+</div>
 <table class="table table-hover table-bordered table-striped">
     <thead>
         <tr>
@@ -19,24 +22,23 @@
         $result = mysqli_query($connection, $query);
 
         if (!$result) {
-            die("Fallo en la solicitud".mysqli_connect_error());
+            die("Fallo en la solicitud" . mysqli_connect_error());
         } else {
-            print_r($result);
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "$row";
+        ?>
+                <tr>
+                    <td><?php echo $row['ID']; ?></td>
+                    <td><?php echo $row['First_Name']; ?></td>
+                    <td><?php echo $row['Last_Name']; ?></td>
+                    <td><?php echo $row['Identification']; ?></td>
+                </tr>
+        <?php
+            }
         }
 
         ?>
-        <tr>
-            <td>3</td>
-            <td>Esteban</td>
-            <td>Sanarrucia</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Rebeca</td>
-            <td>Sanarrucia</td>
-            <td>14</td>
-        </tr>
+
     </tbody>
 </table>
 <?php include('footer.php'); ?>
