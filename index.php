@@ -72,7 +72,7 @@ if (isset($_GET['update_msg'])) {
 <?php
 
 if (isset($_GET['delete_msg'])) {
-    echo '<h5>' .$_GET['delete_msg'].'</h5>';
+    echo '<h6>' .$_GET['delete_msg'].'</h6>';
 }
 
 ?>
