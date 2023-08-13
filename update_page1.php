@@ -4,22 +4,22 @@
 <?php
 
 if (isset($_GET['id'])) {
-    echo $User_id = $_GET['id'];
+    $User_id = $_GET['id'];
 
 
 
-  //  $query = "SELECT * FROM Usuarios WHERE 'ID' = '$id'";
+    $query = "SELECT * FROM Usuarios WHERE ID = '$User_id'";
 
-   // $result = mysqli_query($connection, $query);
+    $result = mysqli_query($connection, $query);
 
- //   if (!$result) {
- //       die("Fallo en el query".mysqli_error($connection));
- //   } else {
+   if (!$result) {
+       die("Fallo en el query".mysqli_error($connection));
+    } else {
 
-   //     $row = mysqli_fetch_row($result);
- //       print_r($row);
+       $row = mysqli_fetch_row($result);
+       print_r($row);
 
- //   }
+    }
 
 }
 ?>
