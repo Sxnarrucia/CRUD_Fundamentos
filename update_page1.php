@@ -4,7 +4,7 @@
 <?php
 
 if (isset($_GET['ID'])) {
-    $User_id = $_GET['ID'];
+    echo $User_id = $_GET['ID'];
 
 
 
