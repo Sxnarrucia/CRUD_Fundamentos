@@ -5,20 +5,20 @@
 
 if (isset($_GET['ID'])) {
     $id = $_GET['ID'];
-    $stmt = $connection->prepare("SELECT * FROM Usuarios WHERE ID = ?");
-    $stmt->bind_param("s", $id);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    print_r($result);
+
+}
+    $query = "SELECT * FROM Usuarios WHERE ID =$id";
+
+    $result = mysqli_query($connection, $query);
 
     if (!$result) {
-        die("Fallo en la solicitud" . mysqli_connect_error());
+        die("Fallo en el query".mysqli_error($connection));
     } else {
+
         $row = mysqli_fetch_row($result);
         print_r($row);
-    }
-}
 
+    }
 
 
 ?>
