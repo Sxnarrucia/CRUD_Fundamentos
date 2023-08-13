@@ -43,9 +43,9 @@ if (isset($_GET['id'])) {
    if (!$result) {
        die("Fallo en el query".mysqli_error($connection));
     } 
-    //else {
-      //  header('location:index.php?update_msg=Actualizado Correctamente');
-    //}
+    else {
+       header('location:index.php?update_msg=Actualizado Correctamente');
+    }
     }
 ?>
 
