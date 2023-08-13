@@ -9,16 +9,16 @@ if (isset($_GET['ID'])) {
 
     $query = "SELECT * FROM Usuarios WHERE 'ID' = '$id'";
 
-    $result = mysqli_query($connection, $query);
+   // $result = mysqli_query($connection, $query);
 
-    if (!$result) {
-        die("Fallo en el query".mysqli_error($connection));
-    } else {
+ //   if (!$result) {
+ //       die("Fallo en el query".mysqli_error($connection));
+ //   } else {
 
-        $row = mysqli_fetch_row($result);
-        print_r($row);
+   //     $row = mysqli_fetch_row($result);
+ //       print_r($row);
 
-    }
+ //   }
 
 }
 ?>
