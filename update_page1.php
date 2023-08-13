@@ -35,7 +35,7 @@ if (isset($_GET['id'])) {
         $lname = $_POST['l_name'];
         $identification = $_POST['identification'];
 
-        $query = "UPDATE Usuarios SET First_Name = '$fname', Last_Name = '$lname', Identification = '$identification' WHERE ID = '$idnew'";
+        $query = "UPDATE Usuarios SET First_Name = '$fname', Last_Name = '$lname', Identification = '$identification' WHERE id = '$idnew'";
 
         $result = mysqli_query($connection, $query);
 
