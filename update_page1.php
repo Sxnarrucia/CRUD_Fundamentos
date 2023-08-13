@@ -5,7 +5,7 @@
 
 if (isset($_GET['ID'])) {
      $ids = $_GET['ID'];
-     print_r($ids);
+     echo($ids);
 
 
   //  $query = "SELECT * FROM Usuarios WHERE 'ID' = '$id'";
