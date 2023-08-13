@@ -38,6 +38,7 @@ if (isset($_GET['id'])) {
                 <label for="id">Identificación</label>
                 <input type="text" name="identification" class="form-control" value="<?php echo $row['Identification'] ?>">
             </div>
+            <input type="submit" class="btn btn-primary" name="update_users" value="Actualizar">
             </form>
 
 
