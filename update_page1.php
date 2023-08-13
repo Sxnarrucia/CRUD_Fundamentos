@@ -50,7 +50,7 @@ if (isset($_GET['id'])) {
 ?>
 
 
-            <form action="update_page_1.php?id_new=<?php echo $id; ?>" method="POST">
+            <form action="update_page1.php?id_new=<?php echo $User_id; ?>" method="POST">
             <div class="form-group">
                 <label for="f_name">Primer Nombre</label>
                 <input type="text" name="f_name" class="form-control" value="<?php echo $row['First_Name'] ?>">
