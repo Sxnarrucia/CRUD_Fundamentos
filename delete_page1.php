@@ -4,8 +4,8 @@
 <?php
 
 
-if (isset($_GET['ID'])) {
-    $id = $_GET['ID'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
 
     $query = "DELETE FROM Usuarios WHERE ID = '$id'";
 
