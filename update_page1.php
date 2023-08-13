@@ -37,13 +37,15 @@ if (isset($_GET['id'])) {
 
         $query = "UPDATE Usuarios SET First_Name = '$fname', Last_Name = '$lname', Identification = '$identification' WHERE id = '$idnew'";
 
+        echo $query;
         $result = mysqli_query($connection, $query);
 
    if (!$result) {
        die("Fallo en el query".mysqli_error($connection));
-    } else {
-        header('location:index.php?update_msg=Actualizado Correctamente');
-    }
+    } 
+    //else {
+      //  header('location:index.php?update_msg=Actualizado Correctamente');
+    //}
     }
 ?>
 
