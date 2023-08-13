@@ -61,6 +61,14 @@ if (isset($_GET['insert_msg'])) {
 
 ?>
 
+<?php
+
+if (isset($_GET['delete_msg'])) {
+    echo '<h5>' .$_GET['delete_msg'].'</h5>';
+}
+
+?>
+
 
 
 <form action="insert_data.php" method="POST">

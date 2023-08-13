@@ -30,7 +30,7 @@ if (isset($_GET['ID'])) {
                 <input type="text" name="f_name" class="form-control">
             </div>
             <div class="form-group">
-                <label for="l_name">Segundo Nombre</label>
+                <label for="l_name">Apellidos</label>
                 <input type="text" name="l_name" class="form-control">
             </div>
             <div class="form-group">
