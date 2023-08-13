@@ -4,7 +4,8 @@
 <?php
 
 if (isset($_GET['ID'])) {
-    echo $ids = $_GET['ID'];
+     $ids = $_GET['ID'];
+     print_r($ids);
 
 
   //  $query = "SELECT * FROM Usuarios WHERE 'ID' = '$id'";
