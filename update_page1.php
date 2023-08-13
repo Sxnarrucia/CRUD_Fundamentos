@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
        die("Fallo en el query".mysqli_error($connection));
     } else {
 
-       $row = mysqli_fetch_row($result);
+       $row = mysqli_fetch_assoc($result);
        
 
     }
@@ -28,15 +28,15 @@ if (isset($_GET['id'])) {
             <form>
             <div class="form-group">
                 <label for="f_name">Primer Nombre</label>
-                <input type="text" name="f_name" class="form-control">
+                <input type="text" name="f_name" class="form-control" value="<?php echo $row['First_Name'] ?>">
             </div>
             <div class="form-group">
                 <label for="l_name">Apellidos</label>
-                <input type="text" name="l_name" class="form-control">
+                <input type="text" name="l_name" class="form-control" value="<?php echo $row['Last_Name'] ?>">
             </div>
             <div class="form-group">
                 <label for="id">Identificación</label>
-                <input type="text" name="identification" class="form-control">
+                <input type="text" name="identification" class="form-control" value="<?php echo $row['Identification'] ?>">
             </div>
             </form>
 
