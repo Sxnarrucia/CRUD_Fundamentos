@@ -33,8 +33,8 @@
                     <td><?php echo $row['First_Name']; ?></td>
                     <td><?php echo $row['Last_Name']; ?></td>
                     <td><?php echo $row['Identification']; ?></td>
-                    <td><a href="update_page1.php?ID=<?php echo $row['ID']; ?>" class="btn btn-success">Actualizar</a></td>
-                    <td><a href="delete_page1.php?ID=<?php echo $row['ID']; ?>" class="btn btn-danger">Eliminar</a></td>
+                    <td><a href="update_page1.php?id=<?php echo $row['ID']; ?>" class="btn btn-success">Actualizar</a></td>
+                    <td><a href="delete_page1.php?id=<?php echo $row['ID']; ?>" class="btn btn-danger">Eliminar</a></td>
                 </tr>
         <?php
             }

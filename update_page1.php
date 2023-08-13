@@ -3,8 +3,8 @@
 
 <?php
 
-if (isset($_GET['ID'])) {
-    $User_id = $_GET['ID'];
+if (isset($_GET['id'])) {
+    $User_id = $_GET['id'];
 
 
 
