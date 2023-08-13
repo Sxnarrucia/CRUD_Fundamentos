@@ -3,7 +3,7 @@
 
 <?php
 
-if (isset($_GET['ID'])) {
+if (isset($_POST['ID'])) {
     $id = $_GET['ID'];
 
 }
