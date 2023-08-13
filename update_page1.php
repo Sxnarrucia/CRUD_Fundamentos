@@ -35,7 +35,7 @@ if (isset($_GET['id'])) {
         $lname = $_POST['l_name'];
         $identification = $_POST['identification'];
 
-        $query = "UPDATE Usuarios SET First_Name = '$fname', Last_Name = $lname, Identification = $identification WHERE ID = '$idnew'";
+        $query = "UPDATE Usuarios SET First_Name = '$fname', Last_Name = '$lname', Identification = '$identification' WHERE ID = '$idnew'";
 
         $result = mysqli_query($connection, $query);
 
@@ -48,7 +48,7 @@ if (isset($_GET['id'])) {
 ?>
 
 
-            <form action="update_page1.php?id_new=<?php echo $id; ?>" method="POST">
+            <form action="update_page_1.php?id_new=<?php echo $id; ?>" method="POST">
             <div class="form-group">
                 <label for="f_name">Primer Nombre</label>
                 <input type="text" name="f_name" class="form-control" value="<?php echo $row['First_Name'] ?>">
